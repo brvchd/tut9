@@ -22,5 +22,7 @@ namespace tut9.DTOs.Request
         public DateTime BirthDate { get; set; }
         [Required(ErrorMessage = "Provide name of studies")]
         public string Studies { get; set; }
+        [Required(ErrorMessage = "Provide semester")]
+        public int Semester { get; set; }
     }
 }

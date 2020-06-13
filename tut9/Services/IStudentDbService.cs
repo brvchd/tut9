@@ -14,6 +14,7 @@ namespace tut9.Services
         public InsertStudentResponse InsertStudent(InsertStudentRequest request);
         public void DeleteStudent(DeleteStudentRequest request);
         public void ModifyStudent(ModifyStudentRequest request);
+        public PromoteStudentsResponse PromoteStudents(PromoteStudentsRequest request);
 
 
 

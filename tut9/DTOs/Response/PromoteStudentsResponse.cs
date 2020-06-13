@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace tut9.DTOs.Response
 {
-    public class InsertStudentResponse
+    public class PromoteStudentsResponse
     {
+        public string Name { get; set; }
         public int Semester { get; set; }
-        public DateTime StartDate { get; set; }
     }
 }
