@@ -6,10 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using tut9.Models;
+using tut9.Services;
 
 namespace tut9
 {
@@ -25,6 +28,11 @@ namespace tut9
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IStudentDbService, StudentDbService>();
+            services.AddDbContext<s18963Context>(options =>
+            {
+                options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s18963;Integrated Security=True");
+            });
             services.AddControllers();
         }
 
