@@ -28,7 +28,7 @@ namespace tut9
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IStudentDbService, StudentDbService>();
+            services.AddTransient<IStudentDbService, StudentDbService>();
             services.AddDbContext<s18963Context>(options =>
             {
                 options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s18963;Integrated Security=True");
