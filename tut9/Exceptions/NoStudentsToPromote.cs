@@ -8,6 +8,6 @@ namespace tut9.Exceptions
 {
     public class NoStudentsToPromote : Exception
     {
-        public NoStudentsToPromote(string message = "There are no student to promote") : base (message) { }
+        public NoStudentsToPromote() : base ("There are no student to promote") { }
     }
 }

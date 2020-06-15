@@ -7,6 +7,6 @@ namespace tut9.Exceptions
 {
     public class StudiesNotFound : Exception
     {
-        public StudiesNotFound(string message = "Studies not found") : base(message) { }
+        public StudiesNotFound() : base("Studies not found") { }
     }
 }

@@ -7,6 +7,6 @@ namespace tut9.Exceptions
 {
     public class StudentAlreadyExists : Exception
     {
-        public StudentAlreadyExists(string message="Student already exists") : base (message) { }
+        public StudentAlreadyExists() : base ("Student already exists") { }
     }
 }

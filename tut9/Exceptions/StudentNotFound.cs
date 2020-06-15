@@ -7,6 +7,6 @@ namespace tut9.Exceptions
 {
     public class StudentNotFound : Exception
     {
-        public StudentNotFound(string message = "Student not found") : base(message) { }
+        public StudentNotFound() : base("Student not found") { }
     }
 }
