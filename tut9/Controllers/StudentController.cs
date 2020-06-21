@@ -46,7 +46,7 @@ namespace tut9.Controllers
             }
         }
 
-        [HttpPost(Name = "ModifyStudent")]
+        [HttpPut(Name = "ModifyStudent")]
         public IActionResult ModifyStudent(ModifyStudentRequest request)
         {
             _service.ModifyStudent(request);
